@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+  ~ ============================================================================
+  ~  Copyright © 2002-2026 by Thomas Thrien.
+  ~  All Rights Reserved.
+  ~ ============================================================================
+  ~  Licensed to the public under the agreements of the GNU Lesser General Public
+  ~  License, version 3.0 (the "License"). You may obtain a copy of the License at
+  ~
+  ~       http://www.gnu.org/licenses/lgpl.html
+  ~
+  ~  Unless required by applicable law or agreed to in writing, software
+  ~  distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+  ~  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+  ~  License for the specific language governing permissions and limitations
+  ~  under the License.
+  -->
+  <head>
+    <meta charset="utf-8">
+    <title>Foundation JSON Builder Overview</title>
+  </head>
+  <body>
+    <p>This library provides a pure and straight-forward JSON Builder. It does
+      not provide any parser capabilities, it is not an object mapper in any
+      way. Basically you can look at it as a type-safe replacement of
+      {@link java.lang.StringBuilder}
+      for JSON output.</p>
+    <p>The main class is
+      {@link org.tquadrat.foundation.jsonbuilder.JSONBuilder};
+      it is used to create the various other JSON values:</p>
+      <ul>
+        <li>{@linkplain org.tquadrat.foundation.jsonbuilder.JSONBuilder#valueOf(String) JSON strings}</li>
+        <li>{@linkplain org.tquadrat.foundation.jsonbuilder.JSONBuilder#valueOf(int) JSON numbers}</li>
+        <li>{@linkplain org.tquadrat.foundation.jsonbuilder.JSONBuilder#createObject() JSON objects}</li>
+        <li>{@linkplain org.tquadrat.foundation.jsonbuilder.JSONBuilder#createArray() JSON arrays}</li>
+      </ul>
+    <p>Call the factory
+      {@link org.tquadrat.foundation.jsonbuilder.JSONBuilder#getInstance() JSONBuilder.getInstance()}
+      to get an instance of {@code JSONBuilder}.</p>
+    <p>Aside the
+      {@linkplain org.tquadrat.foundation.jsonbuilder.JSONBuilder#getIndentation() indentation}
+      for the pretty printing is {@code JSONBuilder} stateless and therefore thread-safe.</p>
+    <p>The library is used like this:</p>
+      <div class="source-container"><pre>
+      <span class="source-line-no">001</span>&hellip;
+      <span class="source-line-no">002</span>final var builder = JSONBuilder.getInstance();
+      <span class="source-line-no">003</span>
+      <span class="source-line-no">004</span>final var rootObject = builder.createObject();
+      <span class="source-line-no">005</span>rootObject.set( "booleanValue", true );
+      <span class="source-line-no">006</span>rootObject.set( "integerValue", 123 );
+      <span class="source-line-no">007</span>rootObject.set( "stringValue", """
+      <span class="source-line-no">008</span>                               FirstLine
+      <span class="source-line-no">009</span>                               SecondLine
+      <span class="source-line-no">010</span>                               ThirdLine""" );
+      <span class="source-line-no">011</span>
+      <span class="source-line-no">012</span>final var object = rootObject.setObject( "objectValue" );
+      <span class="source-line-no">013</span>object.set( "otherStringValue", "Simple String" );
+      <span class="source-line-no">014</span>final var array = rootObject.setArray( "arrayValue" );
+      <span class="source-line-no">015</span>for( var i; i &lt; 10; ++1 )
+      <span class="source-line-no">016</span>{
+      <span class="source-line-no">017</span>    array.add( i );
+      <span class="source-line-no">018</span>}
+      <span class="source-line-no">019</span>&hellip;</pre></div>
+    <p>To return a plain String representation of {@code rootObject}, just call
+      {@link org.tquadrat.foundation.jsonbuilder.JSONValue#toString() toString}
+      on it. For a formatted (pretty printed) output, use
+      {@link java.util.Formatter#format(String,Object...) format()}
+      like this:</p>
+      <div class="source-container"><pre>
+      <span class="source-line-no">101</span>&hellip;
+      <span class="source-line-no">102</span>final var prettyJSON = String.format( "%s", rootObject );
+      <span class="source-line-no">103</span>&hellip;</pre></div>
+    <p>It is important not to use {@code rootObject.toString()} in line&nbsp;102.</p>
+  </body>
+</html>

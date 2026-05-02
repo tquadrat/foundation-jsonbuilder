@@ -1,0 +1,748 @@
+
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:cc="http://creativecommons.org/ns#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:svg="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     version='1.1'
+     baseProfile='full'
+     width='2652.000'
+     height='1383.000'>
+    <defs>
+        <style><![CDATA[
+            line
+            {
+              stroke: black;
+            }
+            line.separator
+            {
+              stroke:       black;
+              stroke-width: 1;
+            }
+            marker
+            {
+              fill: white;
+            }
+            path
+            {
+              fill:   white;
+              stroke: black;
+            }
+            path.implementation
+            {
+              fill:             none;
+              stroke-dasharray: 5,5;
+              stroke-width:     3;
+            }
+            path.inheritance
+            {
+              fill:         none;
+              stroke-width: 3;
+            }
+            rect
+            {
+              fill:         none;
+              stroke:       black;
+              stroke-width: 2;
+            }
+            rect.externalClass
+            {
+              fill:         #D0D0D0;
+              fill-opacity: 0.8;
+            }
+            rect.focusClass
+            {
+              fill:         #FFFFF9;
+              fill-opacity: 0.8;
+            }
+            rect.otherClass
+            {
+              fill:         #F0E68C;
+              fill-opacity: 0.8;
+            }
+            rect.template
+            {
+              fill:             #FFFFFF;
+              fill-opacity:     1.0;
+              stroke-dasharray: 3,3;
+            }
+            text
+            {
+              font-family: monospace;
+              font-size:   10px;
+              font-weight: bold;
+            }
+            text.abstract
+            {
+              font-style: italic;
+            }
+            text.final
+            {
+              text-decoration: underline;
+            }
+            text.static
+            {
+              font-weight: normal;
+            }
+            text.stereotype
+            {
+              font-size:   8px;
+              font-weight: normal;
+            }
+            ]]></style>
+        <marker id='inheritance'
+                viewBox='0,0,40,40'
+                markerUnits='strokeWidth'
+                refX='40'
+                refY='20'
+                markerWidth='6'
+                markerHeight='6'
+                orient='auto'>
+            <path d='M40,20 l-40,-20 v40 Z'
+                  fill='#ffffff'
+                  stroke='#000000'
+                  stroke-width='3'/>
+        </marker>
+        <marker id='implementation'
+                viewBox='0,0,40,40'
+                markerUnits='strokeWidth'
+                refX='40'
+                refY='20'
+                markerWidth='6'
+                markerHeight='6'
+                orient='auto'>
+            <path d='M40,20 l-40,-20 v40 Z'
+                  fill='#ffffff'
+                  stroke='#000000'
+                  stroke-width='3'/>
+        </marker>
+        <clipPath id='ID000001'>
+            <rect class='focusClass'
+                  height='216.000'
+                  width='490.000'
+                  x='0.000'
+                  y='0.000'/>
+        </clipPath>
+        <symbol id='org.tquadrat.foundation.jsonbuilder.JSONValue'>
+            <g>
+                <g class='focusClass'
+                   clip-path='url(#ID000001)'>
+                    <rect x='0.000'
+                          y='0.000'
+                          width='490.000'
+                          height='216.000'
+                          class='focusClass'/>
+                    <line x1='0.000'
+                          y1='28.000'
+                          x2='490.000'
+                          y2='28.000'
+                          class='separator'/>
+                    <text x='218.600'
+                          y='13.000'
+                          class='stereotype'>&#xAB;Interface&#xBB;</text>
+                    <text x='218.000'
+                          y='24.000'
+                          class='abstract'>JSONValue</text>
+                    <line x1='0.000'
+                          y1='45.000'
+                          x2='490.000'
+                          y2='45.000'
+                          class='separator'/>
+                    <text x='5.000'
+                          y='41.000'/>
+                    <text x='5.000'
+                          y='58.000'>&#x2A22; asArray():org.tquadrat.foundation.jsonbuilder.JSONArray</text>
+                    <text x='5.000'
+                          y='69.000'>&#x2A22; asBoolean():org.tquadrat.foundation.jsonbuilder.JSONLiteral</text>
+                    <text x='5.000'
+                          y='80.000'>&#x2A22; asNumber():org.tquadrat.foundation.jsonbuilder.JSONNumber</text>
+                    <text x='5.000'
+                          y='91.000'>&#x2A22; asObject():org.tquadrat.foundation.jsonbuilder.JSONObject</text>
+                    <text x='5.000'
+                          y='102.000'>&#x2A22; asString():org.tquadrat.foundation.jsonbuilder.JSONString</text>
+                    <text x='5.000'
+                          y='113.000'
+                          class='abstract'>+ formatTo(formatter:java.util.Formatter,flags:int,width:int,precision:int):void</text>
+                    <text x='5.000'
+                          y='124.000'>&#x2A22; isBoolean():boolean</text>
+                    <text x='5.000'
+                          y='135.000'>&#x2A22; isArray():boolean</text>
+                    <text x='5.000'
+                          y='146.000'>&#x2A22; isFalse():boolean</text>
+                    <text x='5.000'
+                          y='157.000'>&#x2A22; isNull():boolean</text>
+                    <text x='5.000'
+                          y='168.000'>&#x2A22; isNumber():boolean</text>
+                    <text x='5.000'
+                          y='179.000'>&#x2A22; isObject():boolean</text>
+                    <text x='5.000'
+                          y='190.000'>&#x2A22; isString():boolean</text>
+                    <text x='5.000'
+                          y='201.000'>&#x2A22; isTrue():boolean</text>
+                    <text x='5.000'
+                          y='212.000'
+                          class='abstract'>+ toString():java.lang.String</text>
+                </g>
+            </g>
+        </symbol>
+        <clipPath id='ID000002'>
+            <rect class='otherClass'
+                  height='117.000'
+                  width='490.000'
+                  x='0.000'
+                  y='0.000'/>
+        </clipPath>
+        <symbol id='org.tquadrat.foundation.jsonbuilder.JSONLiteral'>
+            <g>
+                <g clip-path='url(#ID000002)'>
+                    <rect x='0.000'
+                          y='0.000'
+                          width='490.000'
+                          height='117.000'
+                          class='otherClass'/>
+                    <line x1='0.000'
+                          y1='28.000'
+                          x2='490.000'
+                          y2='28.000'
+                          class='separator'/>
+                    <text x='230.600'
+                          y='13.000'
+                          class='stereotype'>&#xAB;Enum&#xBB;</text>
+                    <text x='212.000'
+                          y='24.000'>JSONLiteral</text>
+                    <line x1='0.000'
+                          y1='45.000'
+                          x2='490.000'
+                          y2='45.000'
+                          class='separator'/>
+                    <text y='41.000'
+                          class='final'>- m_Value:java.lang.String</text>
+                    <text x='5.000'
+                          y='58.000'>- JSONLiteral(value:java.lang.String)</text>
+                    <text x='5.000'
+                          y='69.000'
+                          class='static'>+ values():org.tquadrat.foundation.jsonbuilder.JSONLiteral[]</text>
+                    <text x='5.000'
+                          y='80.000'
+                          class='static'>+ valueOf(name:java.lang.String):org.tquadrat.foundation.jsonbuilder.JSONLiteral</text>
+                    <text x='5.000'
+                          y='91.000'>+ formatTo(formatter:java.util.Formatter,flags:int,width:int,precision:int):void</text>
+                    <text x='5.000'
+                          y='102.000'>+ isBoolean():boolean</text>
+                    <text x='5.000'
+                          y='113.000'>+ toString():java.lang.String</text>
+                </g>
+            </g>
+        </symbol>
+        <clipPath id='ID000003'>
+            <rect class='otherClass'
+                  height='414.000'
+                  width='904.000'
+                  x='0.000'
+                  y='0.000'/>
+        </clipPath>
+        <symbol id='org.tquadrat.foundation.jsonbuilder.JSONObject'>
+            <g>
+                <g clip-path='url(#ID000003)'>
+                    <rect x='0.000'
+                          y='0.000'
+                          width='904.000'
+                          height='414.000'
+                          class='otherClass'/>
+                    <line x1='0.000'
+                          y1='28.000'
+                          x2='904.000'
+                          y2='28.000'
+                          class='separator'/>
+                    <text x='425.600'
+                          y='13.000'
+                          class='stereotype'>&#xAB;Interface&#xBB;</text>
+                    <text x='422.000'
+                          y='24.000'
+                          class='abstract'>JSONObject</text>
+                    <line x1='0.000'
+                          y1='45.000'
+                          x2='904.000'
+                          y2='45.000'
+                          class='separator'/>
+                    <text x='5.000'
+                          y='41.000'/>
+                    <text x='5.000'
+                          y='58.000'
+                          class='abstract'>+ contains(name:java.lang.String):boolean</text>
+                    <text x='5.000'
+                          y='69.000'
+                          class='abstract'>+ get(name:java.lang.String):java.util.Optional&lt;org.tquadrat.foundation.jsonbuilder.JSONValue&gt;</text>
+                    <text x='5.000'
+                          y='80.000'>&#x2A22; getArray(name:java.lang.String,defaultValue:org.tquadrat.foundation.jsonbuilder.JSONArray):org.tquadrat.foundation.jsonbuilder.JSONArray</text>
+                    <text x='5.000'
+                          y='91.000'>&#x2A22; getBigDecimal(name:java.lang.String,defaultValue:java.math.BigDecimal):java.math.BigDecimal</text>
+                    <text x='5.000'
+                          y='102.000'>&#x2A22; getBigInteger(name:java.lang.String,defaultValue:java.math.BigInteger):java.math.BigInteger</text>
+                    <text x='5.000'
+                          y='113.000'>&#x2A22; getBoolean(name:java.lang.String,defaultValue:boolean):boolean</text>
+                    <text x='5.000'
+                          y='124.000'>&#x2A22; getDouble(name:java.lang.String,defaultValue:double):double</text>
+                    <text x='5.000'
+                          y='135.000'>&#x2A22; getFloat(name:java.lang.String,defaultValue:float):float</text>
+                    <text x='5.000'
+                          y='146.000'>&#x2A22; getInt(name:java.lang.String,defaultValue:int):int</text>
+                    <text x='5.000'
+                          y='157.000'>&#x2A22; getLong(name:java.lang.String,defaultValue:long):long</text>
+                    <text x='5.000'
+                          y='168.000'>&#x2A22; getObject(name:java.lang.String,defaultValue:org.tquadrat.foundation.jsonbuilder.JSONObject):org.tquadrat.foundation.jsonbuilder.JSONObject</text>
+                    <text x='5.000'
+                          y='179.000'>&#x2A22; getString(name:java.lang.String,defaultValue:java.lang.String):java.lang.String</text>
+                    <text x='5.000'
+                          y='190.000'
+                          class='abstract'>+ isEmpty():boolean</text>
+                    <text x='5.000'
+                          y='201.000'
+                          class='abstract'>+ merge(object:org.tquadrat.foundation.jsonbuilder.JSONObject):org.tquadrat.foundation.jsonbuilder.JSONObject</text>
+                    <text x='5.000'
+                          y='212.000'
+                          class='abstract'>+ names():java.util.SequencedCollection&lt;java.lang.String&gt;</text>
+                    <text x='5.000'
+                          y='223.000'
+                          class='abstract'>+ remove(name:java.lang.String):org.tquadrat.foundation.jsonbuilder.JSONObject</text>
+                    <text x='5.000'
+                          y='234.000'
+                          class='abstract'>+ set(name:java.lang.String,value:java.math.BigDecimal):org.tquadrat.foundation.jsonbuilder.JSONObject</text>
+                    <text x='5.000'
+                          y='245.000'
+                          class='abstract'>+ set(name:java.lang.String,value:java.math.BigInteger):org.tquadrat.foundation.jsonbuilder.JSONObject</text>
+                    <text x='5.000'
+                          y='256.000'>&#x2A22; set(name:java.lang.String,value:boolean):org.tquadrat.foundation.jsonbuilder.JSONObject</text>
+                    <text x='5.000'
+                          y='267.000'
+                          class='abstract'>+ set(name:java.lang.String,value:org.tquadrat.foundation.lang.value.DimensionedValue&lt;T&gt;,targetUnit:T):org.tquadrat.foundation.jsonbuilder.JSONObject</text>
+                    <text x='5.000'
+                          y='278.000'
+                          class='abstract'>+ set(name:java.lang.String,value:double):org.tquadrat.foundation.jsonbuilder.JSONObject</text>
+                    <text x='5.000'
+                          y='289.000'
+                          class='abstract'>+ set(name:java.lang.String,value:java.lang.Double):org.tquadrat.foundation.jsonbuilder.JSONObject</text>
+                    <text x='5.000'
+                          y='300.000'
+                          class='abstract'>+ set(name:java.lang.String,value:float):org.tquadrat.foundation.jsonbuilder.JSONObject</text>
+                    <text x='5.000'
+                          y='311.000'
+                          class='abstract'>+ set(name:java.lang.String,value:java.lang.Float):org.tquadrat.foundation.jsonbuilder.JSONObject</text>
+                    <text x='5.000'
+                          y='322.000'
+                          class='abstract'>+ set(name:java.lang.String,value:int):org.tquadrat.foundation.jsonbuilder.JSONObject</text>
+                    <text x='5.000'
+                          y='333.000'
+                          class='abstract'>+ set(name:java.lang.String,value:java.lang.Integer):org.tquadrat.foundation.jsonbuilder.JSONObject</text>
+                    <text x='5.000'
+                          y='344.000'
+                          class='abstract'>+ set(name:java.lang.String,value:org.tquadrat.foundation.jsonbuilder.JSONValue):org.tquadrat.foundation.jsonbuilder.JSONObject</text>
+                    <text x='5.000'
+                          y='355.000'
+                          class='abstract'>+ set(name:java.lang.String,value:long):org.tquadrat.foundation.jsonbuilder.JSONObject</text>
+                    <text x='5.000'
+                          y='366.000'
+                          class='abstract'>+ set(name:java.lang.String,value:java.lang.Long):org.tquadrat.foundation.jsonbuilder.JSONObject</text>
+                    <text x='5.000'
+                          y='377.000'
+                          class='abstract'>+ set(name:java.lang.String,value:java.lang.String):org.tquadrat.foundation.jsonbuilder.JSONObject</text>
+                    <text x='5.000'
+                          y='388.000'
+                          class='abstract'>+ setArray(name:java.lang.String):org.tquadrat.foundation.jsonbuilder.JSONArray</text>
+                    <text x='5.000'
+                          y='399.000'
+                          class='abstract'>+ setObject(name:java.lang.String):org.tquadrat.foundation.jsonbuilder.JSONObject</text>
+                    <text x='5.000'
+                          y='410.000'
+                          class='abstract'>+ size():int</text>
+                </g>
+            </g>
+        </symbol>
+        <clipPath id='ID000004'>
+            <rect class='otherClass'
+                  height='62.000'
+                  width='190.000'
+                  x='0.000'
+                  y='0.000'/>
+        </clipPath>
+        <symbol id='org.tquadrat.foundation.jsonbuilder.JSONString'>
+            <g>
+                <g clip-path='url(#ID000004)'>
+                    <rect x='0.000'
+                          y='0.000'
+                          width='190.000'
+                          height='62.000'
+                          class='otherClass'/>
+                    <line x1='0.000'
+                          y1='28.000'
+                          x2='190.000'
+                          y2='28.000'
+                          class='separator'/>
+                    <text x='68.600'
+                          y='13.000'
+                          class='stereotype'>&#xAB;Interface&#xBB;</text>
+                    <text x='65.000'
+                          y='24.000'
+                          class='abstract'>JSONString</text>
+                    <line x1='0.000'
+                          y1='45.000'
+                          x2='190.000'
+                          y2='45.000'
+                          class='separator'/>
+                    <text x='5.000'
+                          y='41.000'/>
+                    <text x='5.000'
+                          y='58.000'
+                          class='abstract'>+ getString():java.lang.String</text>
+                </g>
+            </g>
+        </symbol>
+        <clipPath id='ID000005'>
+            <rect class='otherClass'
+                  height='117.000'
+                  width='238.000'
+                  x='0.000'
+                  y='0.000'/>
+        </clipPath>
+        <symbol id='org.tquadrat.foundation.jsonbuilder.JSONNumber'>
+            <g>
+                <g clip-path='url(#ID000005)'>
+                    <rect x='0.000'
+                          y='0.000'
+                          width='238.000'
+                          height='117.000'
+                          class='otherClass'/>
+                    <line x1='0.000'
+                          y1='28.000'
+                          x2='238.000'
+                          y2='28.000'
+                          class='separator'/>
+                    <text x='92.600'
+                          y='13.000'
+                          class='stereotype'>&#xAB;Interface&#xBB;</text>
+                    <text x='89.000'
+                          y='24.000'
+                          class='abstract'>JSONNumber</text>
+                    <line x1='0.000'
+                          y1='45.000'
+                          x2='238.000'
+                          y2='45.000'
+                          class='separator'/>
+                    <text x='5.000'
+                          y='41.000'/>
+                    <text x='5.000'
+                          y='58.000'
+                          class='abstract'>+ getBigDecimal():java.math.BigDecimal</text>
+                    <text x='5.000'
+                          y='69.000'
+                          class='abstract'>+ getBigInteger():java.math.BigInteger</text>
+                    <text x='5.000'
+                          y='80.000'
+                          class='abstract'>+ getDouble():double</text>
+                    <text x='5.000'
+                          y='91.000'
+                          class='abstract'>+ getFloat():float</text>
+                    <text x='5.000'
+                          y='102.000'
+                          class='abstract'>+ getInt():int</text>
+                    <text x='5.000'
+                          y='113.000'
+                          class='abstract'>+ getLong():long</text>
+                </g>
+            </g>
+        </symbol>
+        <clipPath id='ID000006'>
+            <rect class='otherClass'
+                  height='755.000'
+                  width='580.000'
+                  x='0.000'
+                  y='0.000'/>
+        </clipPath>
+        <symbol id='org.tquadrat.foundation.jsonbuilder.JSONArray'>
+            <g>
+                <g clip-path='url(#ID000006)'>
+                    <rect x='0.000'
+                          y='0.000'
+                          width='580.000'
+                          height='755.000'
+                          class='otherClass'/>
+                    <line x1='0.000'
+                          y1='28.000'
+                          x2='580.000'
+                          y2='28.000'
+                          class='separator'/>
+                    <text x='263.600'
+                          y='13.000'
+                          class='stereotype'>&#xAB;Interface&#xBB;</text>
+                    <text x='263.000'
+                          y='24.000'
+                          class='abstract'>JSONArray</text>
+                    <line x1='0.000'
+                          y1='45.000'
+                          x2='580.000'
+                          y2='45.000'
+                          class='separator'/>
+                    <text x='5.000'
+                          y='41.000'/>
+                    <text x='5.000'
+                          y='58.000'
+                          class='abstract'>+ add(value:java.math.BigDecimal):void</text>
+                    <text x='5.000'
+                          y='69.000'
+                          class='abstract'>+ add(value:java.math.BigInteger):void</text>
+                    <text x='5.000'
+                          y='80.000'>&#x2A22; add(value:boolean):void</text>
+                    <text x='5.000'
+                          y='91.000'
+                          class='abstract'>+ add(value:double):void</text>
+                    <text x='5.000'
+                          y='102.000'
+                          class='abstract'>+ add(value:org.tquadrat.foundation.lang.value.DimensionedValue&lt;T&gt;,targetUnit:T):void</text>
+                    <text x='5.000'
+                          y='113.000'
+                          class='abstract'>+ add(value:java.lang.Double):void</text>
+                    <text x='5.000'
+                          y='124.000'
+                          class='abstract'>+ add(value:float):void</text>
+                    <text x='5.000'
+                          y='135.000'
+                          class='abstract'>+ add(value:java.lang.Float):void</text>
+                    <text x='5.000'
+                          y='146.000'
+                          class='abstract'>+ add(value:int):void</text>
+                    <text x='5.000'
+                          y='157.000'
+                          class='abstract'>+ add(value:java.lang.Integer):void</text>
+                    <text x='5.000'
+                          y='168.000'
+                          class='abstract'>+ add(value:org.tquadrat.foundation.jsonbuilder.JSONValue):void</text>
+                    <text x='5.000'
+                          y='179.000'
+                          class='abstract'>+ add(value:long):void</text>
+                    <text x='5.000'
+                          y='190.000'
+                          class='abstract'>+ add(value:java.lang.Long):void</text>
+                    <text x='5.000'
+                          y='201.000'
+                          class='abstract'>+ add(value:java.lang.String):void</text>
+                    <text x='5.000'
+                          y='212.000'
+                          class='abstract'>+ add(index:int,value:java.math.BigDecimal):void</text>
+                    <text x='5.000'
+                          y='223.000'
+                          class='abstract'>+ add(index:int,value:java.math.BigInteger):void</text>
+                    <text x='5.000'
+                          y='234.000'>&#x2A22; add(index:int,value:boolean):void</text>
+                    <text x='5.000'
+                          y='245.000'
+                          class='abstract'>+ add(index:int,value:org.tquadrat.foundation.lang.value.DimensionedValue&lt;T&gt;,targetUnit:T):void</text>
+                    <text x='5.000'
+                          y='256.000'
+                          class='abstract'>+ add(index:int,value:double):void</text>
+                    <text x='5.000'
+                          y='267.000'
+                          class='abstract'>+ add(index:int,value:java.lang.Double):void</text>
+                    <text x='5.000'
+                          y='278.000'
+                          class='abstract'>+ add(index:int,value:float):void</text>
+                    <text x='5.000'
+                          y='289.000'
+                          class='abstract'>+ add(index:int,value:java.lang.Float):void</text>
+                    <text x='5.000'
+                          y='300.000'
+                          class='abstract'>+ add(index:int,value:int):void</text>
+                    <text x='5.000'
+                          y='311.000'
+                          class='abstract'>+ add(index:int,value:java.lang.Integer):void</text>
+                    <text x='5.000'
+                          y='322.000'
+                          class='abstract'>+ add(index:int,value:org.tquadrat.foundation.jsonbuilder.JSONValue):void</text>
+                    <text x='5.000'
+                          y='333.000'
+                          class='abstract'>+ add(index:int,value:long):void</text>
+                    <text x='5.000'
+                          y='344.000'
+                          class='abstract'>+ add(index:int,value:java.lang.Long):void</text>
+                    <text x='5.000'
+                          y='355.000'
+                          class='abstract'>+ add(index:int,value:java.lang.String):void</text>
+                    <text x='5.000'
+                          y='366.000'
+                          class='abstract'>+ addAll(array:org.tquadrat.foundation.jsonbuilder.JSONArray):boolean</text>
+                    <text x='5.000'
+                          y='377.000'
+                          class='abstract'>+ addArray():org.tquadrat.foundation.jsonbuilder.JSONArray</text>
+                    <text x='5.000'
+                          y='388.000'
+                          class='abstract'>+ addArray(index:int):org.tquadrat.foundation.jsonbuilder.JSONArray</text>
+                    <text x='5.000'
+                          y='399.000'
+                          class='abstract'>+ addObject():org.tquadrat.foundation.jsonbuilder.JSONObject</text>
+                    <text x='5.000'
+                          y='410.000'
+                          class='abstract'>+ addObject(index:int):org.tquadrat.foundation.jsonbuilder.JSONObject</text>
+                    <text x='5.000'
+                          y='421.000'
+                          class='abstract'>+ get(index:int):org.tquadrat.foundation.jsonbuilder.JSONValue</text>
+                    <text x='5.000'
+                          y='432.000'>&#x2A22; getArray(index:int):org.tquadrat.foundation.jsonbuilder.JSONArray</text>
+                    <text x='5.000'
+                          y='443.000'>&#x2A22; getBigDecimal(index:int):java.math.BigDecimal</text>
+                    <text x='5.000'
+                          y='454.000'>&#x2A22; getBigInteger(index:int):java.math.BigInteger</text>
+                    <text x='5.000'
+                          y='465.000'>&#x2A22; getBoolean(index:int):boolean</text>
+                    <text x='5.000'
+                          y='476.000'>&#x2A22; getDouble(index:int):double</text>
+                    <text x='5.000'
+                          y='487.000'>&#x2A22; getFloat(index:int):float</text>
+                    <text x='5.000'
+                          y='498.000'>&#x2A22; getInt(index:int):int</text>
+                    <text x='5.000'
+                          y='509.000'>&#x2A22; getLong(index:int):long</text>
+                    <text x='5.000'
+                          y='520.000'>&#x2A22; getObject(index:int):org.tquadrat.foundation.jsonbuilder.JSONObject</text>
+                    <text x='5.000'
+                          y='531.000'>&#x2A22; getString(index:int):java.lang.String</text>
+                    <text x='5.000'
+                          y='542.000'
+                          class='abstract'>+ isEmpty():boolean</text>
+                    <text x='5.000'
+                          y='553.000'
+                          class='abstract'>+ remove(index:int):void</text>
+                    <text x='5.000'
+                          y='564.000'
+                          class='abstract'>+ remove(element:org.tquadrat.foundation.jsonbuilder.JSONValue):void</text>
+                    <text x='5.000'
+                          y='575.000'
+                          class='abstract'>+ set(index:int,value:java.math.BigDecimal):void</text>
+                    <text x='5.000'
+                          y='586.000'
+                          class='abstract'>+ set(index:int,value:java.math.BigInteger):void</text>
+                    <text x='5.000'
+                          y='597.000'>&#x2A22; set(index:int,value:boolean):void</text>
+                    <text x='5.000'
+                          y='608.000'
+                          class='abstract'>+ set(index:int,value:org.tquadrat.foundation.lang.value.DimensionedValue&lt;T&gt;,targetUnit:T):void</text>
+                    <text x='5.000'
+                          y='619.000'
+                          class='abstract'>+ set(index:int,value:double):void</text>
+                    <text x='5.000'
+                          y='630.000'
+                          class='abstract'>+ set(index:int,value:java.lang.Double):void</text>
+                    <text x='5.000'
+                          y='641.000'
+                          class='abstract'>+ set(index:int,value:int):void</text>
+                    <text x='5.000'
+                          y='652.000'
+                          class='abstract'>+ set(index:int,value:float):void</text>
+                    <text x='5.000'
+                          y='663.000'
+                          class='abstract'>+ set(index:int,value:java.lang.Float):void</text>
+                    <text x='5.000'
+                          y='674.000'
+                          class='abstract'>+ set(index:int,value:java.lang.Integer):void</text>
+                    <text x='5.000'
+                          y='685.000'
+                          class='abstract'>+ set(index:int,value:org.tquadrat.foundation.jsonbuilder.JSONValue):void</text>
+                    <text x='5.000'
+                          y='696.000'
+                          class='abstract'>+ set(index:int,value:long):void</text>
+                    <text x='5.000'
+                          y='707.000'
+                          class='abstract'>+ set(index:int,value:java.lang.Long):void</text>
+                    <text x='5.000'
+                          y='718.000'
+                          class='abstract'>+ set(index:int,value:java.lang.String):void</text>
+                    <text x='5.000'
+                          y='729.000'
+                          class='abstract'>+ setArray(index:int):org.tquadrat.foundation.jsonbuilder.JSONArray</text>
+                    <text x='5.000'
+                          y='740.000'
+                          class='abstract'>+ setObject(index:int):org.tquadrat.foundation.jsonbuilder.JSONObject</text>
+                    <text x='5.000'
+                          y='751.000'
+                          class='abstract'>+ size():int</text>
+                </g>
+            </g>
+        </symbol>
+        <clipPath id='ID000007'>
+            <rect class='externalClass'
+                  height='62.000'
+                  width='418.000'
+                  x='0.000'
+                  y='0.000'/>
+        </clipPath>
+        <symbol id='java.util.Formattable'>
+            <g>
+                <g clip-path='url(#ID000007)'>
+                    <rect x='0.000'
+                          y='0.000'
+                          width='418.000'
+                          height='62.000'
+                          class='externalClass'/>
+                    <line x1='0.000'
+                          y1='28.000'
+                          x2='418.000'
+                          y2='28.000'
+                          class='separator'/>
+                    <text x='182.600'
+                          y='13.000'
+                          class='stereotype'>&#xAB;Interface&#xBB;</text>
+                    <text x='176.000'
+                          y='24.000'
+                          class='abstract'>Formattable</text>
+                    <line x1='0.000'
+                          y1='45.000'
+                          x2='418.000'
+                          y2='45.000'
+                          class='separator'/>
+                    <text x='5.000'
+                          y='41.000'/>
+                    <text x='5.000'
+                          y='58.000'
+                          class='abstract'>+ formatTo(arg0:java.util.Formatter,arg1:int,arg2:int,arg3:int):void</text>
+                </g>
+            </g>
+        </symbol>
+    </defs>
+    <path class='implementation'
+          d='M270.000,503.000 c0.000,-85.000,996.000,0.000,996.000,-85.000 v-15'
+          marker-end='url(#implementation)'/>
+    <path class='inheritance'
+          d='M1017.000,503.000 c0.000,-85.000,279.000,0.000,279.000,-85.000 v-15'
+          marker-end='url(#inheritance)'/>
+    <path class='inheritance'
+          d='M1614.000,503.000 c0.000,-85.000,-288.000,0.000,-288.000,-85.000 v-15'
+          marker-end='url(#inheritance)'/>
+    <path class='inheritance'
+          d='M1878.000,503.000 c0.000,-85.000,-522.000,0.000,-522.000,-85.000 v-15'
+          marker-end='url(#inheritance)'/>
+    <path class='inheritance'
+          d='M2337.000,503.000 c0.000,-85.000,-951.000,0.000,-951.000,-85.000 v-15'
+          marker-end='url(#inheritance)'/>
+    <path class='inheritance'
+          d='M1326.000,187.000 L1326.000,87.000'
+          marker-end='url(#inheritance)'/>
+    <use x='1117.000'
+         y='25.000'
+         xlink:href='#java.util.Formattable'/>
+    <use x='1081.000'
+         y='187.000'
+         xlink:href='#org.tquadrat.foundation.jsonbuilder.JSONValue'/>
+    <use x='25.000'
+         y='503.000'
+         xlink:href='#org.tquadrat.foundation.jsonbuilder.JSONLiteral'/>
+    <use x='565.000'
+         y='503.000'
+         xlink:href='#org.tquadrat.foundation.jsonbuilder.JSONObject'/>
+    <use x='1519.000'
+         y='503.000'
+         xlink:href='#org.tquadrat.foundation.jsonbuilder.JSONString'/>
+    <use x='1759.000'
+         y='503.000'
+         xlink:href='#org.tquadrat.foundation.jsonbuilder.JSONNumber'/>
+    <use x='2047.000'
+         y='503.000'
+         xlink:href='#org.tquadrat.foundation.jsonbuilder.JSONArray'/>
+</svg>
