@@ -17,13 +17,13 @@
 
 package org.tquadrat.foundation.jsonbuilder;
 
-import org.apiguardian.api.API;
-import org.tquadrat.foundation.annotation.ClassVersion;
+import static org.apiguardian.api.API.Status.STABLE;
 
 import java.util.Formattable;
 import java.util.Formatter;
 
-import static org.apiguardian.api.API.Status.STABLE;
+import org.apiguardian.api.API;
+import org.tquadrat.foundation.annotation.ClassVersion;
 
 /**
  *  <p>{@summary This interface describes the base for all the JSON
@@ -39,12 +39,12 @@ import static org.apiguardian.api.API.Status.STABLE;
  *  output.</p>
  *
  *  @extauthor Thomas Thrien - thomas.thrien@tquadrat.org
- *  @version $Id: JSONValue.java 1194 2026-04-15 13:56:30Z tquadrat $
+ *  @version $Id: JSONValue.java 1218 2026-05-02 15:17:24Z tquadrat $
  *  @since 0.25.0
  *
  *  @UMLGraph.link
  */
-@ClassVersion( sourceVersion = "$Id: JSONValue.java 1194 2026-04-15 13:56:30Z tquadrat $" )
+@ClassVersion( sourceVersion = "$Id: JSONValue.java 1218 2026-05-02 15:17:24Z tquadrat $" )
 @API( status = STABLE, since = "0.25.0" )
 public sealed interface JSONValue extends Formattable
     permits JSONArray, JSONLiteral, JSONNumber, JSONObject, JSONString

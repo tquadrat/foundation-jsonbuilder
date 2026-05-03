@@ -17,13 +17,12 @@
 
 package org.tquadrat.foundation.jsonbuilder;
 
-import org.apiguardian.api.API;
-import org.tquadrat.foundation.annotation.ClassVersion;
-import org.tquadrat.foundation.jsonbuilder.internal.JSONArrayImpl;
-import org.tquadrat.foundation.jsonbuilder.internal.JSONBuilderImpl;
-import org.tquadrat.foundation.jsonbuilder.internal.JSONObjectImpl;
-import org.tquadrat.foundation.lang.value.Dimension;
-import org.tquadrat.foundation.lang.value.DimensionedValue;
+import static org.apiguardian.api.API.Status.STABLE;
+import static org.tquadrat.foundation.jsonbuilder.JSONLiteral.FALSE;
+import static org.tquadrat.foundation.jsonbuilder.JSONLiteral.NULL;
+import static org.tquadrat.foundation.jsonbuilder.JSONLiteral.TRUE;
+import static org.tquadrat.foundation.lang.Objects.mapFromNull;
+import static org.tquadrat.foundation.lang.Objects.requireNonNullArgument;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;
@@ -32,12 +31,13 @@ import java.util.Formatter;
 import java.util.function.Function;
 import java.util.function.Supplier;
 
-import static org.apiguardian.api.API.Status.STABLE;
-import static org.tquadrat.foundation.jsonbuilder.JSONLiteral.FALSE;
-import static org.tquadrat.foundation.jsonbuilder.JSONLiteral.NULL;
-import static org.tquadrat.foundation.jsonbuilder.JSONLiteral.TRUE;
-import static org.tquadrat.foundation.lang.Objects.mapFromNull;
-import static org.tquadrat.foundation.lang.Objects.requireNonNullArgument;
+import org.apiguardian.api.API;
+import org.tquadrat.foundation.annotation.ClassVersion;
+import org.tquadrat.foundation.jsonbuilder.internal.JSONArrayImpl;
+import org.tquadrat.foundation.jsonbuilder.internal.JSONBuilderImpl;
+import org.tquadrat.foundation.jsonbuilder.internal.JSONObjectImpl;
+import org.tquadrat.foundation.lang.value.Dimension;
+import org.tquadrat.foundation.lang.value.DimensionedValue;
 
 /**
  *  <p>{@summary This sealed interface is the main API for the Foundation JSON
@@ -58,12 +58,12 @@ import static org.tquadrat.foundation.lang.Objects.requireNonNullArgument;
  *  are <i>not</i> thread-safe.</p>
  *
  *  @extauthor Thomas Thrien - thomas.thrien@tquadrat.org
- *  @version $Id: JSONBuilder.java 1196 2026-04-18 14:31:50Z tquadrat $
+ *  @version $Id: JSONBuilder.java 1218 2026-05-02 15:17:24Z tquadrat $
  *  @since 0.25.0
  *
  *  @UMLGraph.link
  */
-@ClassVersion( sourceVersion = "$Id: JSONBuilder.java 1196 2026-04-18 14:31:50Z tquadrat $" )
+@ClassVersion( sourceVersion = "$Id: JSONBuilder.java 1218 2026-05-02 15:17:24Z tquadrat $" )
 @API( status = STABLE, since = "0.25.0" )
 public sealed interface JSONBuilder
     permits JSONBuilderImpl
