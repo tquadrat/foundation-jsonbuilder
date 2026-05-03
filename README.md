@@ -11,3 +11,5 @@ The Foundation JSON Builder
       <version>0.25.0</version>
     </dependency>
     ```
+---  
+Last updated: 2026-05-03T17:30:02.842548225+02:00[Europe/Berlin]
