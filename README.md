@@ -8,8 +8,8 @@ The Foundation JSON Builder
     <dependency>
       <groupId>org.tquadrat.library</groupId>
       <artifactId>org.tquadrat.foundation.jsonbuilder</artifactId>
-      <version>0.25.3</version>
+      <version>0.25.10</version>
     </dependency>
     ```
 ---  
-Last updated: 2026-05-25T22:57:33.630421997+02:00[Europe/Berlin]
+Last updated: 2026-05-25T23:13:50.03146809+02:00[Europe/Berlin]
