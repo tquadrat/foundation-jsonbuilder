@@ -39,12 +39,12 @@ import org.tquadrat.foundation.annotation.ClassVersion;
  *  output.</p>
  *
  *  @extauthor Thomas Thrien - thomas.thrien@tquadrat.org
- *  @version $Id: JSONValue.java 1218 2026-05-02 15:17:24Z tquadrat $
+ *  @version $Id: JSONValue.java 1258 2026-06-04 18:33:06Z tquadrat $
  *  @since 0.25.0
  *
  *  @UMLGraph.link
  */
-@ClassVersion( sourceVersion = "$Id: JSONValue.java 1218 2026-05-02 15:17:24Z tquadrat $" )
+@ClassVersion( sourceVersion = "$Id: JSONValue.java 1258 2026-06-04 18:33:06Z tquadrat $" )
 @API( status = STABLE, since = "0.25.0" )
 public sealed interface JSONValue extends Formattable
     permits JSONArray, JSONLiteral, JSONNumber, JSONObject, JSONString
@@ -170,7 +170,7 @@ public sealed interface JSONValue extends Formattable
      *  <p>{@summary Detects whether this value represents a boolean
      *  value.}</p>
      *
-     *  @return {@code true} if this value represents either the
+     *  @return {@true} if this value represents either the
      *      {@linkplain JSONLiteral JSON literal}
      *      {@link JSONLiteral#TRUE true}
      *      or
@@ -183,17 +183,17 @@ public sealed interface JSONValue extends Formattable
      *  this is the case, this value is an instance of
      *  {@link JSONArray}.</p>
      *
-     *  @return {@code true} if this value is an instance of
-     *      {@link JSONArray}, {@code false} otherwise.
+     *  @return {@true} if this value is an instance of
+     *      {@link JSONArray}, {@false} otherwise.
      */
     @SuppressWarnings( {"InstanceofThis", "ClassReferencesSubclass"} )
     public default boolean isArray() { return this instanceof JSONArray; }
 
     /**
      *  <p>{@summary Detects whether this value represents the JSON literal
-     *  {@code false}.}</p>
+     *  {@false}.}</p>
      *
-     *  @return {@code true} if this value represents the
+     *  @return {@true} if this value represents the
      *      {@linkplain JSONLiteral JSON literal}
      *      {@link JSONLiteral#FALSE false}.
      */
@@ -201,9 +201,9 @@ public sealed interface JSONValue extends Formattable
 
     /**
      *  <p>{@summary Detects whether this value represents the JSON literal
-     *  {@code null}.}
+     *  {@null}.}
      *
-     *  @return {@code true} if this value represents the
+     *  @return {@true} if this value represents the
      *      {@linkplain JSONLiteral JSON literal}
      *      {@link JSONLiteral#NULL null}.
      */
@@ -214,8 +214,8 @@ public sealed interface JSONValue extends Formattable
      *  this is the case, this value is an instance of
      *  {@link JSONNumber}.</p>
      *
-     *  @return {@code true} if this value is an instance of
-     *      {@link JSONObject}, {@code false} otherwise.
+     *  @return {@true} if this value is an instance of
+     *      {@link JSONObject}, {@false} otherwise.
      */
     @SuppressWarnings( {"InstanceofThis", "ClassReferencesSubclass"} )
     public default boolean isNumber() { return this instanceof JSONNumber; }
@@ -225,8 +225,8 @@ public sealed interface JSONValue extends Formattable
      *  this is the case, this value is an instance of
      *  {@link JSONObject}.</p>
      *
-     *  @return {@code true} if this value is an instance of
-     *      {@link JSONObject}, {@code false} otherwise.
+     *  @return {@true} if this value is an instance of
+     *      {@link JSONObject}, {@false} otherwise.
      */
     @SuppressWarnings( {"InstanceofThis", "ClassReferencesSubclass"} )
     public default boolean isObject() { return this instanceof JSONObject; }
@@ -236,17 +236,17 @@ public sealed interface JSONValue extends Formattable
      *  this is the case, this value is an instance of
      *  {@link JSONString}.</p>
      *
-     *  @return {@code true} if this value is an instance of
-     *      {@link JSONString}, {@code false} otherwise.
+     *  @return {@true} if this value is an instance of
+     *      {@link JSONString}, {@false} otherwise.
      */
     @SuppressWarnings( {"InstanceofThis", "ClassReferencesSubclass"} )
     public default boolean isString() { return this instanceof JSONString; }
 
     /**
      *  <p>{@summary Detects whether this value represents the JSON literal
-     *  {@code true}.}</p>
+     *  {@true}.}</p>
      *
-     *  @return {@code true} if this value represents the
+     *  @return {@true} if this value represents the
      *      {@linkplain JSONLiteral JSON literal}
      *      {@link JSONLiteral#TRUE true}.
      */

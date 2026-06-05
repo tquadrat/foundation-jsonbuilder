@@ -21,7 +21,7 @@
  *  <p>If not specified differently, methods from classes defined in this
  *  package will throw a
  *  {@link org.tquadrat.foundation.exception.NullArgumentException NullArgumentException}
- *  if {@code null} is provided as an argument.</p>
+ *  if {@null} is provided as an argument.</p>
  *  <p>Likewise empty or blank
  *  {@link java.lang.String String}
  *  arguments will cause an
@@ -29,7 +29,7 @@
  *  or a
  *  {@link org.tquadrat.foundation.exception.BlankArgumentException}
  *  to be thrown.</p>
- *  <p>Also methods will not return {@code null} if not specified.</p>
+ *  <p>Also methods will not return {@null} if not specified.</p>
  */
 package org.tquadrat.foundation.jsonbuilder;
 

@@ -17,32 +17,32 @@
 
 package org.tquadrat.foundation.jsonbuilder;
 
-import org.apiguardian.api.API;
-import org.tquadrat.foundation.annotation.ClassVersion;
-import org.tquadrat.foundation.jsonbuilder.internal.JSONObjectImpl;
-import org.tquadrat.foundation.lang.value.Dimension;
-import org.tquadrat.foundation.lang.value.DimensionedValue;
+import static org.apiguardian.api.API.Status.STABLE;
+import static org.tquadrat.foundation.jsonbuilder.JSONLiteral.FALSE;
+import static org.tquadrat.foundation.jsonbuilder.JSONLiteral.TRUE;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.util.Optional;
 import java.util.SequencedCollection;
 
-import static org.apiguardian.api.API.Status.STABLE;
-import static org.tquadrat.foundation.jsonbuilder.JSONLiteral.FALSE;
-import static org.tquadrat.foundation.jsonbuilder.JSONLiteral.TRUE;
+import org.apiguardian.api.API;
+import org.tquadrat.foundation.annotation.ClassVersion;
+import org.tquadrat.foundation.jsonbuilder.internal.JSONObjectImpl;
+import org.tquadrat.foundation.lang.value.Dimension;
+import org.tquadrat.foundation.lang.value.DimensionedValue;
 
 /**
  *  <p>{@summary The definition of a JSON object.}</p>
  *
  *  @extauthor Thomas Thrien - thomas.thrien@tquadrat.org
- *  @version $Id: JSONObject.java 1195 2026-04-15 21:33:40Z tquadrat $
+ *  @version $Id: JSONObject.java 1258 2026-06-04 18:33:06Z tquadrat $
  *  @since 0.25.0
  *
  *  @UMLGraph.link
  */
 @SuppressWarnings( "ClassWithTooManyMethods" )
-@ClassVersion( sourceVersion = "$Id: JSONObject.java 1195 2026-04-15 21:33:40Z tquadrat $" )
+@ClassVersion( sourceVersion = "$Id: JSONObject.java 1258 2026-06-04 18:33:06Z tquadrat $" )
 @API( status = STABLE, since = "0.25.0" )
 public sealed interface JSONObject extends Iterable<JSONValue>, JSONValue
     permits JSONObjectImpl
@@ -53,11 +53,11 @@ public sealed interface JSONObject extends Iterable<JSONValue>, JSONValue
     /**
      *  <p>{@summary Checks if a specified member is present as a child of this
      *  object.} This will not test if that child is the JSON literal
-     *  {@code null}, This needs to be tested separately.</p>
+     *  {@null}, This needs to be tested separately.</p>
      *
      *  @param  name The name of the member to check for.
-     *  @return {@code true} if there is a member with the given name,
-     *      {@code false} if not.
+     *  @return {@true} if there is a member with the given name,
+     *      {@false} if not.
      */
     public boolean contains( final String name );
 
@@ -79,7 +79,7 @@ public sealed interface JSONObject extends Iterable<JSONValue>, JSONValue
      *
      *  @param  name    The name of the member whose value is to be returned.
      *  @param  defaultValue    The value to be returned if the requested
-     *      member is missing; can be {@code null}.
+     *      member is missing; can be {@null}.
      *  @return The value of the member with the specified name, or the given
      *      default value if this object does not contain a member with that
      *      name.
@@ -101,7 +101,7 @@ public sealed interface JSONObject extends Iterable<JSONValue>, JSONValue
      *
      *  @param  name    The name of the member whose value is to be returned.
      *  @param  defaultValue    The value to be returned if the requested
-     *      member is missing; can be {@code null}.
+     *      member is missing; can be {@null}.
      *  @return The value of the member with the specified name, or the given
      *      default value if this object does not contain a member with that
      *      name.
@@ -131,7 +131,7 @@ public sealed interface JSONObject extends Iterable<JSONValue>, JSONValue
      *
      *  @param  name    The name of the member whose value is to be returned.
      *  @param  defaultValue    The value to be returned if the requested
-     *      member is missing; can be {@code null}.
+     *      member is missing; can be {@null}.
      *  @return The value of the member with the specified name, or the given
      *      default value if this object does not contain a member with that
      *      name.
@@ -246,7 +246,7 @@ public sealed interface JSONObject extends Iterable<JSONValue>, JSONValue
      *
      *  @param  name    The name of the member whose value is to be returned.
      *  @param  defaultValue    The value to be returned if the requested
-     *      member is missing; can be {@code null}.
+     *      member is missing; can be {@null}.
      *  @return The value of the member with the specified name, or the given
      *      default value if this object does not contain a member with that
      *      name.
@@ -304,7 +304,7 @@ public sealed interface JSONObject extends Iterable<JSONValue>, JSONValue
      *
      *  @param  name    The name of the member whose value is to be returned.
      *  @param  defaultValue    The value to be returned if the requested
-     *      member is missing; can be {@code null}.
+     *      member is missing; can be {@null}.
      *  @return The value of the member with the specified name, or the given
      *      default value if this object does not contain a member with that
      *      name.
@@ -326,7 +326,7 @@ public sealed interface JSONObject extends Iterable<JSONValue>, JSONValue
      *
      *  @param  name    The name of the member whose value is to be returned.
      *  @param  defaultValue    The value to be returned if the requested
-     *      member is missing; can be {@code null}.
+     *      member is missing; can be {@null}.
      *  @return The value of the member with the specified name, or the given
      *      default value if this object does not contain a member with that
      *      name.
@@ -350,8 +350,8 @@ public sealed interface JSONObject extends Iterable<JSONValue>, JSONValue
     /**
      *  Checks whether this object has members.
      *
-     *  @return {@code true} if the object does not have any members,
-     *      {@code false} otherwise.
+     *  @return {@true} if the object does not have any members,
+     *      {@false} otherwise.
      */
     public boolean isEmpty();
 

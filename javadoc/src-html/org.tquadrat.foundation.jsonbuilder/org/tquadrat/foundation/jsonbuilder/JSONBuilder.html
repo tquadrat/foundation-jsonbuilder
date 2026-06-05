@@ -71,12 +71,12 @@
 <span class="source-line-no">058</span><span id="line-58"> *  are &lt;i&gt;not&lt;/i&gt; thread-safe.&lt;/p&gt;</span>
 <span class="source-line-no">059</span><span id="line-59"> *</span>
 <span class="source-line-no">060</span><span id="line-60"> *  @extauthor Thomas Thrien - thomas.thrien@tquadrat.org</span>
-<span class="source-line-no">061</span><span id="line-61"> *  @version $Id: JSONBuilder.java 1218 2026-05-02 15:17:24Z tquadrat $</span>
+<span class="source-line-no">061</span><span id="line-61"> *  @version $Id: JSONBuilder.java 1258 2026-06-04 18:33:06Z tquadrat $</span>
 <span class="source-line-no">062</span><span id="line-62"> *  @since 0.25.0</span>
 <span class="source-line-no">063</span><span id="line-63"> *</span>
 <span class="source-line-no">064</span><span id="line-64"> *  @UMLGraph.link</span>
 <span class="source-line-no">065</span><span id="line-65"> */</span>
-<span class="source-line-no">066</span><span id="line-66">@ClassVersion( sourceVersion = "$Id: JSONBuilder.java 1218 2026-05-02 15:17:24Z tquadrat $" )</span>
+<span class="source-line-no">066</span><span id="line-66">@ClassVersion( sourceVersion = "$Id: JSONBuilder.java 1258 2026-06-04 18:33:06Z tquadrat $" )</span>
 <span class="source-line-no">067</span><span id="line-67">@API( status = STABLE, since = "0.25.0" )</span>
 <span class="source-line-no">068</span><span id="line-68">public sealed interface JSONBuilder</span>
 <span class="source-line-no">069</span><span id="line-69">    permits JSONBuilderImpl</span>
@@ -672,9 +672,9 @@
 <span class="source-line-no">659</span><span id="line-659">    /**</span>
 <span class="source-line-no">660</span><span id="line-660">     *  Returns a</span>
 <span class="source-line-no">661</span><span id="line-661">     *  {@link JSONValue}</span>
-<span class="source-line-no">662</span><span id="line-662">     *  instance that represents the {@code null} value.</span>
+<span class="source-line-no">662</span><span id="line-662">     *  instance that represents the {@null} value.</span>
 <span class="source-line-no">663</span><span id="line-663">     *</span>
-<span class="source-line-no">664</span><span id="line-664">     *  @return The JSON value that represents {@code null}.</span>
+<span class="source-line-no">664</span><span id="line-664">     *  @return The JSON value that represents {@null}.</span>
 <span class="source-line-no">665</span><span id="line-665">     */</span>
 <span class="source-line-no">666</span><span id="line-666">    public default JSONLiteral valueOfNull() { return NULL; }</span>
 <span class="source-line-no">667</span><span id="line-667">}</span>

@@ -17,18 +17,18 @@
 
 package org.tquadrat.foundation.jsonbuilder;
 
+import static org.apiguardian.api.API.Status.STABLE;
+import static org.tquadrat.foundation.jsonbuilder.JSONLiteral.FALSE;
+import static org.tquadrat.foundation.jsonbuilder.JSONLiteral.TRUE;
+
+import java.math.BigDecimal;
+import java.math.BigInteger;
+
 import org.apiguardian.api.API;
 import org.tquadrat.foundation.annotation.ClassVersion;
 import org.tquadrat.foundation.jsonbuilder.internal.JSONArrayImpl;
 import org.tquadrat.foundation.lang.value.Dimension;
 import org.tquadrat.foundation.lang.value.DimensionedValue;
-
-import java.math.BigDecimal;
-import java.math.BigInteger;
-
-import static org.apiguardian.api.API.Status.STABLE;
-import static org.tquadrat.foundation.jsonbuilder.JSONLiteral.FALSE;
-import static org.tquadrat.foundation.jsonbuilder.JSONLiteral.TRUE;
 
 /**
  *  <p>{@summary The definition of a JSON array.}</p>
@@ -65,13 +65,13 @@ import static org.tquadrat.foundation.jsonbuilder.JSONLiteral.TRUE;
  *  <p>An instance of {@code JSONArray} is not thread-safe.</p>
  *
  *  @extauthor Thomas Thrien - thomas.thrien@tquadrat.org
- *  @version $Id: JSONArray.java 1195 2026-04-15 21:33:40Z tquadrat $
+ *  @version $Id: JSONArray.java 1258 2026-06-04 18:33:06Z tquadrat $
  *  @since 0.25.0
  *
  *  @UMLGraph.link
  */
 @SuppressWarnings( "ClassWithTooManyMethods" )
-@ClassVersion( sourceVersion = "$Id: JSONArray.java 1195 2026-04-15 21:33:40Z tquadrat $" )
+@ClassVersion( sourceVersion = "$Id: JSONArray.java 1258 2026-06-04 18:33:06Z tquadrat $" )
 @API( status = STABLE, since = "0.25.0" )
 public sealed interface JSONArray extends Iterable<JSONValue>, JSONValue
     permits JSONArrayImpl
@@ -448,7 +448,7 @@ public sealed interface JSONArray extends Iterable<JSONValue>, JSONValue
      *  elements of the given array are added to this one.</p>
      *
      *  @param  array   The other array.
-     *  @return {@code true} if the call to this method changed this instance.
+     *  @return {@true} if the call to this method changed this instance.
      */
     @SuppressWarnings( "BooleanMethodNameMustStartWithQuestion" )
     public boolean addAll( final JSONArray array );
@@ -502,7 +502,7 @@ public sealed interface JSONArray extends Iterable<JSONValue>, JSONValue
      *  this array.}</p>
      *
      *  @param  index   The index of the element whose value is to be returned.
-     *  @return The element; will never be {@code null}.
+     *  @return The element; will never be {@null}.
      *  @throws IndexOutOfBoundsException   The index is less than 0 or greater
      *      than or equal to the
      *      {@linkplain #size() size}
@@ -748,8 +748,8 @@ public sealed interface JSONArray extends Iterable<JSONValue>, JSONValue
     /**
      *  Checks whether this array has elements.
      *
-     *  @return {@code true} if the object does not have any elements,
-     *      {@code false} otherwise.
+     *  @return {@true} if the object does not have any elements,
+     *      {@false} otherwise.
      */
     public boolean isEmpty();
 

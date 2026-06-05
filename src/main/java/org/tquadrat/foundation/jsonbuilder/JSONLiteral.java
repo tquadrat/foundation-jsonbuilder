@@ -33,12 +33,12 @@ import org.tquadrat.foundation.annotation.ClassVersion;
  *  </ul>
  *
  *  @extauthor Thomas Thrien - thomas.thrien@tquadrat.org
- *  @version $Id: JSONLiteral.java 1190 2026-04-08 13:27:20Z tquadrat $
+ *  @version $Id: JSONLiteral.java 1258 2026-06-04 18:33:06Z tquadrat $
  *  @since 0.1.0
  *
  *  @UMLGraph.link
  */
-@ClassVersion( sourceVersion = "$Id: JSONLiteral.java 1190 2026-04-08 13:27:20Z tquadrat $" )
+@ClassVersion( sourceVersion = "$Id: JSONLiteral.java 1258 2026-06-04 18:33:06Z tquadrat $" )
 @API( status = STABLE, since = "0.1.0" )
 public enum JSONLiteral implements JSONValue
 {
@@ -46,7 +46,7 @@ public enum JSONLiteral implements JSONValue
     ====** Enum Definitions **=================================================
         \*------------------*/
     /**
-     *  Represents the JSON literal {@code null}.
+     *  Represents the JSON literal {@null}.
      */
     NULL( "null" )
     {
@@ -58,7 +58,7 @@ public enum JSONLiteral implements JSONValue
     },
 
     /**
-     *  Represents the JSON literal {@code true}.
+     *  Represents the JSON literal {@true}.
      */
     TRUE( "true" )
     {
@@ -70,7 +70,7 @@ public enum JSONLiteral implements JSONValue
     },
 
     /**
-     *  Represents the JSON literal {@code false}.
+     *  Represents the JSON literal {@false}.
      */
     FALSE( "false" )
     {

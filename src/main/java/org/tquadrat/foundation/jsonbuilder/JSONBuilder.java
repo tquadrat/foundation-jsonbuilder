@@ -58,12 +58,12 @@ import org.tquadrat.foundation.lang.value.DimensionedValue;
  *  are <i>not</i> thread-safe.</p>
  *
  *  @extauthor Thomas Thrien - thomas.thrien@tquadrat.org
- *  @version $Id: JSONBuilder.java 1218 2026-05-02 15:17:24Z tquadrat $
+ *  @version $Id: JSONBuilder.java 1258 2026-06-04 18:33:06Z tquadrat $
  *  @since 0.25.0
  *
  *  @UMLGraph.link
  */
-@ClassVersion( sourceVersion = "$Id: JSONBuilder.java 1218 2026-05-02 15:17:24Z tquadrat $" )
+@ClassVersion( sourceVersion = "$Id: JSONBuilder.java 1258 2026-06-04 18:33:06Z tquadrat $" )
 @API( status = STABLE, since = "0.25.0" )
 public sealed interface JSONBuilder
     permits JSONBuilderImpl
@@ -659,9 +659,9 @@ public sealed interface JSONBuilder
     /**
      *  Returns a
      *  {@link JSONValue}
-     *  instance that represents the {@code null} value.
+     *  instance that represents the {@null} value.
      *
-     *  @return The JSON value that represents {@code null}.
+     *  @return The JSON value that represents {@null}.
      */
     public default JSONLiteral valueOfNull() { return NULL; }
 }
