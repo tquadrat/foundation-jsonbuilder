@@ -12,4 +12,4 @@ The Foundation JSON Builder
     </dependency>
     ```
 ---  
-Last updated: 2026-06-05T22:59:54.125879216+02:00[Europe/Berlin]
+Last updated: 2026-09-09T11:37:03.377174446+02:00[Europe/Berlin]
