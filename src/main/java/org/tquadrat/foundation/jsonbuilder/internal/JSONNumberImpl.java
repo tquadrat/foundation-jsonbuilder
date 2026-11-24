@@ -27,14 +27,13 @@ import java.util.Formatter;
 
 import org.apiguardian.api.API;
 import org.tquadrat.foundation.annotation.ClassVersion;
-import org.tquadrat.foundation.exception.ValidationException;
 import org.tquadrat.foundation.jsonbuilder.JSONNumber;
 
 /**
  *  <p>{@summary The implementation of the interface
  *  {@link JSONNumber}.}</p>
  *
- *  @extauthor Thomas Thrien - thomas.thrien@tquadrat.org
+ *  @author Thomas Thrien - thomas.thrien@tquadrat.org
  *  @version $Id: JSONNumberImpl.java 1190 2026-04-08 13:27:20Z tquadrat $
  *  @since 0.25.0
  *
@@ -171,14 +170,19 @@ public final class JSONNumberImpl implements JSONNumber
     public int hashCode() { return hash( m_Value ); }
 
     /**
-     *  Validates whether the given value is a valid numerical value.
+     *  <p>{@summary Validates whether the given value is a valid numerical
+     *  value.}</p>
      *
      *  @param  value   The value.
      *  @return The given value.
-     *  @throws ValidationException The given value is not a valid number.
+     *  @throws IllegalArgumentException The given value is not a valid number.
      */
-    private static final String validateNumber( final String value )
+    private static final String validateNumber( final String value ) throws IllegalArgumentException
     {
+        /*
+         * TODO This implementation works, but it is bad idea, because of the
+         */
+
         try
         {
             //noinspection ResultOfObjectAllocationIgnored
@@ -186,7 +190,7 @@ public final class JSONNumberImpl implements JSONNumber
         }
         catch( final NumberFormatException e )
         {
-            throw new ValidationException( "The given value '%s' is not a valid number".formatted( value ), e );
+            throw new IllegalArgumentException( "The given value '%s' is not a valid number".formatted( value ), e );
         }
 
         //---* Done *----------------------------------------------------------
